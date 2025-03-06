@@ -1,12 +1,14 @@
 body {
   background-color: #f9f7fe;
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   text-align: center;
-  font-family: sans-serif;
   font-size: 36px;
+  margin-top: 20px;
 }
 
 h2 {
@@ -16,10 +18,11 @@ h2 {
 
 select {
   display: block;
-  width: 100%;
+  width: calc(100% - 20px); 
   font-size: 18px;
   border-radius: 4px;
   padding: 10px;
+  margin: 10px 0; 
 }
 
 .container {
@@ -62,4 +65,27 @@ footer {
   text-align: center;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  background-color: #f9f7fe;
+}
+
+footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .time {
+    font-size: 36px;
+  }
 }
